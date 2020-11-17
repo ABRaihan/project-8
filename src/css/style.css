@@ -5,9 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: #000;
-}
 
 :root {
     --roboto: 'Roboto';
@@ -126,11 +123,58 @@ body{
     font-size: 14px;
     margin-top: 30px;
     margin-bottom: 70px;
+    background-color: #33C1CF;
+}
+/*——————> Portfolio Section <——————*/
+.portfolio .portfolio-text{
+    background-color: #33C1CF;
+}
+.portfolio .portfolio-heading{
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.portfolio .portfolio-heading h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.portfolio .portfolio-heading hr{
+    width: 270px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+.portfolio .portfolio-heading p{
+    font-size: 14px;
+}
+.portfolio .portfolio-categories {
+    margin-top: 60px;
+}
+.portfolio .portfolio-categories ul a {
+    color: #fff;
+    font-size: 14px;
+}
+.portfolio .portfolio-categories .active{
+    color: #F7C552;
+}
+.portfolio .portfolio-gallery{
+    padding-top: 30px;
+}
+.portfolio .portfolio-gallery div{
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-gallery div img{
+    display: block;
+    margin: auto;
 }
 
 /*------> Responsive <------*/
-/*/*——————> Medium Device <——————*/
-@media (min-width:768px) {
+
+/*——————> Small Device <——————*/
+@media (min-width: 576px){
+}
+/*——————> Medium Device <——————*/
+@media (min-width: 768px) {
     .header .navbar-nav .nav-item {
         background-color: transparent;
         border: none;
@@ -144,11 +188,47 @@ body{
     .banner .banner-text p {
         padding: 0 115px;
     }
+    .portfolio .portfolio-gallery{
+        padding-top: 15px;
+    }
 }
 
 /*——————> Large Device <——————*/
 @media (min-width: 992px) {
     .banner .banner-text p {
         padding: 0 235px;
+    }
+    .portfolio .portfolio-heading{
+        text-align: left;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-color: #33C1CF;
+        height: 732px;
+        margin-left: -100vh;
+        padding-left: 100vh;
+    }
+    .portfolio .portfolio-heading hr{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .portfolio .portfolio-heading p{
+        padding-right: 70px;
+    }
+    .portfolio .portfolio-categories ul a{
+        padding-left: 0;
+    }
+    .portfolio .portfolio-gallery{
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .portfolio .portfolio-gallery div{
+        margin: 0 -16px;
+    }
+}
+
+/*——————> Extra Large Device <——————*/
+@media (min-width: 1200px){
+    .portfolio .portfolio-text{
+        padding: 0;
     }
 }
